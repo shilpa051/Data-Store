@@ -10,7 +10,7 @@ Important points:
 3) If user deosn't specify "path" for each request, then Default path taken by system is "Data-Store/dataStore.json"
 4) expiresIn field takes input in seconds
 5) path field input string should follow this format: "I:\\project\\DataStore.json"
-----------------------------------
+
 Below are the sample API endpoints
 
 1) To save data in Data-Store
@@ -21,16 +21,16 @@ BODY:
 
 optional fields: data.expiresIn, path
 mandatory field: data
---------------------------------------
+
 2) To retrieve data based on key from Data-Store
 GET: /dataStore?path=I:\\project\\DataStore.json&id=1
 
 optional field:path
 mandatory field: id
-----------------------------------------
+
 3)To delete data based on key from Data-Store
 DELETE: /dataStore?path=I:\\project\\DataStore.json&id=1
 
 optional field:path
 mandatory field: id
------------------------------------------
+
